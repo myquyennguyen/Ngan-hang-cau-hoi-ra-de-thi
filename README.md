@@ -6,12 +6,12 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
-## Mô tả project
-Các chức năng chính của hệ thống:
-*Quản lý người dùng:
+# Mô tả project
+Các chức năng chính của hệ thống:<br>
+*Quản lý người dùng:<br>
 Hệ thống cho phép khởi tạo và lƣu trữ thông tin ngƣời dùng gồm cán bộ là
 trƣởng bộ môn, giảng viên và sinh viên. Mỗi ngƣời dùng sẽ đƣợc cấp một tài khoản
-duy nhất, có thể tao tác trên hệ thống với phân quyền phù hợp.
+duy nhất, có thể tao tác trên hệ thống với phân quyền phù hợp.<br>
 *Tạo và quản lý ngân hàng câu hỏi
 Câu hỏi đƣợc các giảng viên cập nhật lên hệ thống theo môn học và mức độ câu
 hỏi: nhận biết, thông hiểu, vận dụng và vận dụng cao. Sau khi đƣợc cập nhật, câu
