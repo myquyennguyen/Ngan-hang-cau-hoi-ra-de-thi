@@ -6,58 +6,35 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
 ## Mô tả project
+Các chức năng chính của hệ thống:
+*Quản lý người dùng:
+Hệ thống cho phép khởi tạo và lƣu trữ thông tin ngƣời dùng gồm cán bộ là
+trƣởng bộ môn, giảng viên và sinh viên. Mỗi ngƣời dùng sẽ đƣợc cấp một tài khoản
+duy nhất, có thể tao tác trên hệ thống với phân quyền phù hợp.
+*Tạo và quản lý ngân hàng câu hỏi
+Câu hỏi đƣợc các giảng viên cập nhật lên hệ thống theo môn học và mức độ câu
+hỏi: nhận biết, thông hiểu, vận dụng và vận dụng cao. Sau khi đƣợc cập nhật, câu
+hỏi phải trải qua sự kiểm duyệt của trƣởng bộ môn mới đƣợc lữu lâu dài, những câu
+hỏi không đƣợc duyệt sẽ bị xóa đi. Với 2 chức năng cập nhật câu hỏi từng câu và
+cập nhật bằng file theo định dạng mẫu, hệ thống cho phép ngƣời dùng cập nhật câu
+hỏi kèm hình ảnh và cập nhật cùng lúc nhiều câu hỏi giúp tiết kiệm thời gian, công
+sức.
+*Ra đề thi:
+Cán bộ nhập vào các thông tin cần thiết của đề thi và cấu trúc đề thi nhƣ số câu
+hỏi cho từng mức độ. Đề thi sẽ đƣợc trộn ngẫu nhiêu từ ngân hàng câu hỏi, ƣu tiên
+cho các câu hỏi có số lần xuất hiện trong các đề thi ít, để tạo thành một đề thi gốc và
+lƣu trữ trên hệ thống. Ngƣời dùng có thể xuất đề thi dƣới dạng file word, mỗi lần
+Phần mềm quản lý ngân hàng câu hỏi ra đề thi GVHD: Lê Hoàng Thảo
+Hồ Thị Lài - Nguyễn Thị Mỹ Quyên 14
+xuất đề ta sẽ nhận đƣợc một đề thi đƣợc trộn ngẫu nhiêu từ đề gốc kèm theo là file
+đáp án cho tất cả câu hỏi trong đề.
+*Thi onlie
+Sinh viên sẽ đƣợc cấp tài khoản để truy cập vào hệ thống, nhận đề từ hệ thống và
+mật khẩu đề đƣợc cung cấp bởi giảng viên để mở bài thi và thực hiện làm bài. Hệ
+thống cung cấp chức năng lƣu nhƣng không nộp giúp lƣu lại trạng thái bài làm của
+sinh viên, phòng trƣờng hợp gặp sự cố gián đoạn, sau đó sinh viên vẫn có thể truy
+cập và thực hiện tiếp tục bài thi. Khi hết thời gian làm bài hoặc sinh viên thực hiện
+nộp bài, hệ thống sẽ kiểm tra bài làm của sinh viên và chấm điểm dựa trên đáp án
+trong ngân hàng câu hỏi. Hệ thống trả kết quả cho sinh viên.
+
